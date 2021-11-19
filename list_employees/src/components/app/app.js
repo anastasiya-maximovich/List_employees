@@ -3,19 +3,19 @@ import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
 import EmployeesList from '../employees-list/employees-list';
 import EmployeesAddForm from '../employees-add-form/employees-add-form';
+import { Component } from 'react';
 import './app.css';
 
 const data = [
-  {name: "Arizona Robbins", salary: 1200, increase: true},
-  {name:"Kally Torez", salary: 970, increase: false},
-  {name: "Darek Shepard", salary: 1100, increase: false}
+  {name: "Arizona Robbins", salary: 1200, increase: true, id: 1},
+  {name:"Kally Torez", salary: 970, increase: false, id: 2},
+  {name: "Darek Shepard", salary: 1100, increase: false, id: 3}
 ]
 
 function App() {
   return (
     <div className="app">
         <AppInfo />
-
         <div className="search-panel">
             <SearchPanel/>
             <AppFilter/>
